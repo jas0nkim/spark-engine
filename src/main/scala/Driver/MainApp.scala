@@ -20,7 +20,7 @@ object MainApp {
                 invoker(className, "run", sparkParams) 
             } 
             catch {
-                case _: Exception => logger.error("class not support yet!")
+                case e: Exception => logger.error("class not support yet!", e)
             }
         } else {
             logger.error("Please register class: " + sparkParams.get.inFormat.toString)
