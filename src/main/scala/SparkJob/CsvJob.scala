@@ -13,7 +13,7 @@ object CsvJob {
                     .getOrCreate()
 
         // Homework: change the way we use the option to inOption
-        val data = spark.read.option("header", "false").option("delimiter", ",").csv(sparkParams.inPath)
+        val data = spark.read.option("header", "true").option("delimiter", ",").csv(sparkParams.inPath)
 
         // transformation logic below
         val resultDF = data.withColumn("source", lit("wcd"))
