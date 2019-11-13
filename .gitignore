@@ -5,3 +5,5 @@
 /project/project/*
 /project/target/*
 /spark-2.4.4-bin-hadoop2.7/*
+/output-files/csv/*
+/output-files/json/*
