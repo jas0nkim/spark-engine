@@ -1,5 +1,7 @@
-/target/*
+/target/scala-2.11/classes/*
+/target/scala-2.11/resolution-cache/*
+/target/streams/*
+/target/.history
 /project/project/*
 /project/target/*
 /spark-2.4.4-bin-hadoop2.7/*
-/output-files/*
