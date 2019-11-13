@@ -13,7 +13,7 @@ object JsonJob {
                     .getOrCreate()
 
         // Homework: change the way we use the option to inOption
-        val data = spark.read.format("json").json(sparkParams.inPath)
+        val data = spark.read.option("multiline", "true").json(sparkParams.inPath)
 
         // transformation logic below
         val resultDF = data.withColumn("source", lit("wcd"))
